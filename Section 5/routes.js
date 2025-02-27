@@ -8,7 +8,7 @@ const requestHandler = (req, res) => {
             res.setHeader('content-Type', 'text/html');
             res.write('<html>');
             res.write('<head><title>Enter Message</title></head>');
-            res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
+            res.write('<body><h1>Hi</h1><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
             res.write('</html>');
             return res.end();
         }
